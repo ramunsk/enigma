@@ -31,7 +31,7 @@ describe('Guard', () => {
         });
 
         it('not throw error when argument is not empty string', () => {
-            expect(() => Guard.notEmpty('test', 'Cannot be empty string')).not.toThrow();
+            expect(() => Guard.notEmpty('test string', 'Cannot be empty string')).not.toThrow();
         });
     });
 });
